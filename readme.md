@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 24px;
-    }
-
-    h2 {
-      color: #555;
-      font-size: 20px;
-    }
-
-    p {
-      color: #777;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    a {
-      color: #007bff;
-    }
-
-  </style>
-</head>
 <body>
 
   <h1>Training Code Snippets Repository</h1>
