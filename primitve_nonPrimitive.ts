@@ -59,3 +59,98 @@ const functionB = (paramB: number) => {
 
 functionB(varA);
 console.log(varA);
+
+// ########################################################################################################
+// ########################################################################################################
+// ########################################  AI Generated  ################################################
+// ########################################################################################################
+// ########################################################################################################
+console.log(
+  "########################################  AI Generated  ################################################"
+);
+
+// Primitive Data Types
+
+// String
+const userName: string = "John Doe";
+
+// Number
+const age: number = 25;
+
+// Boolean
+const isStudent: boolean = true;
+
+// Null
+const nullValue: null = null;
+
+// Undefined
+let undefinedValue: undefined = undefined;
+
+// Symbol
+const id: symbol = Symbol("uniqueId");
+
+// Non-Primitive Data Types
+
+interface PersonObject {
+  name: string;
+  age: number;
+  isStudent: boolean;
+}
+
+// Object
+const person: PersonObject = {
+  name: "Jane Smith",
+  age: 30,
+  isStudent: false,
+};
+
+// Array
+const numbers: number[] = [1, 2, 3, 4, 5];
+
+// Function
+const greet: () => void = () => {
+  console.log("Hello!");
+};
+
+// Differences between Primitive and Non-Primitive Data Types
+
+// Mutation
+let x: number = 5;
+let y: number = x;
+x = 10;
+console.log(y); // Output: 5 (y is not affected by the change in x)
+
+interface AnObject {
+  value: number;
+}
+
+let obj1: AnObject = { value: 1 };
+let obj2: AnObject = obj1;
+obj1.value = 2;
+console.log(obj2); // Output: { value: 2 } (obj2 is a reference to obj1)
+
+// Comparison
+const str1: string = "Hello";
+const str2: string = "Hello";
+console.log(str1 === str2); // Output: true (values are compared)
+
+const arr1: number[] = [1, 2, 3];
+const arr2: number[] = [1, 2, 3];
+console.log(arr1 === arr2); // Output: false (references are compared)
+
+// Memory Allocation
+console.log(typeof userName); // Output: string (primitive type)
+console.log(typeof person); // Output: object (non-primitive type)
+
+// Usage of Methods
+console.log(userName.toUpperCase()); // Output: "JOHN DOE" (string method)
+console.log(numbers.length); // Output: 5 (array property)
+
+// Summary
+// Primitive types include strings, numbers, booleans, null, undefined, and symbols.
+// Non-primitive types include objects, arrays, and functions.
+// Primitive types are compared by value, while non-primitive types are compared by reference.
+// Primitive types have a fixed memory size, while non-primitive types can vary in size.
+// Primitive types have limited methods and properties, while non-primitive types have more extensive built-in methods and properties.
+
+// End of the "primitive_nonPrimitive.ts" file.
