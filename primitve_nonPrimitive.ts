@@ -22,7 +22,7 @@ let c: Array<number> = [1, 23, 2, 3, 4, 1]; // Number
 let d: object = {}; // String
 
 // When assigning one variable to another, it copies the memory of that variable.
-// Even if change varD we can see varA also changes its value
+// Even if change varD we can see varC also changes its value
 let varC: Array<number> = [1, 2, 3, 4, 5];
 let varD: Array<number> = [12, 22, 23, 24];
 
