@@ -76,9 +76,9 @@ class ChildClass extends ParentClass {
   }
 }
 
-const instance = new ParentClass();
-instance.protectedProperty = "Hello"; // Error: 'protectedProperty' is protected and only accessible within the class 'ParentClass' and its subclasses
-instance.protectedMethod(); // Error: 'protectedMethod' is protected and only accessible within the class 'ParentClass' and its subclasses
+const instance_protected = new ParentClass();
+instance_protected.protectedProperty = "Hello"; // Error: 'protectedProperty' is protected and only accessible within the class 'ParentClass' and its subclasses
+instance_protected.protectedMethod(); // Error: 'protectedMethod' is protected and only accessible within the class 'ParentClass' and its subclasses
 
 // Use case:
 // - Protected members are useful when you want to provide access to certain properties and methods to derived
