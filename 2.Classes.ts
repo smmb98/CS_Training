@@ -4,9 +4,13 @@
 
 // Let's dive into the different aspects of TypeScript classes and instances:
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Custom Data Types: Classes allow you to define your own custom data types
 // by encapsulating related data and behavior into a single entity.
 // This abstraction helps in organizing and structuring your code.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Instances: An instance is a specific occurrence or realization of a class.
 // It is created using the new keyword, which invokes the class constructor.
@@ -16,13 +20,15 @@
 // This means they can store and represent complex data structures and behavior,
 // unlike primitive data types(e.g., numbers, strings) that hold simple values.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Constructors: A constructor is a special method within a class that is automatically
 // called when creating a new instance.It is responsible for initializing the object's
 // state and defining initial values for its properties.
 
 // Here's an example of a class with a constructor:
 
-class Person {
+class Persons {
   name: string;
   age: number;
 
@@ -35,9 +41,13 @@ class Person {
 // The constructor takes two parameters, name and age, and assigns their values
 // to the respective properties of the instance being created.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Destructors: In TypeScript, there is no explicit destructor concept.
 // Instead, the garbage collector automatically handles memory management by
 // freeing resources when they are no longer in use.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Properties: Properties are variables associated with a class.
 // They define the state of an object and allow you to store and access data.
@@ -62,6 +72,87 @@ class Circle {
 // The circumference property is a getter that calculates and returns the
 // circumference of the circle based on its radius.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// "this" keyword: this keyword refers to the current instance of a class or
+// object within class methods or member functions.It allows you to access
+// and manipulate the properties and methods of the current object.
+// Let's explore the usage of this with code examples, discuss its importance,
+// use cases, and pros and cons.
+
+// Code Example:
+
+class Person {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  greet(): void {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person = new Person("John");
+person.greet(); // Output: Hello, my name is John.
+
+// Explanation:
+// In the above example, we define a Person class with a name property
+// and a greet method.The greet method uses the this keyword to access the
+// name property of the current object and logs a greeting message.
+
+// Importance of this in Classes:
+
+// Referencing Object State: The this keyword allows you to refer to the properties
+// and methods of the current object.It enables you to access and manipulate
+// the object's state within its own methods.
+
+// Method Chaining: By using this in class methods, you can chain method calls
+// on the same object, which can lead to more concise and readable code.
+
+// Dynamic Context: The value of this is dynamically determined at runtime
+// based on how the method is invoked.It provides flexibility in terms of
+// which object is the context for method execution.
+
+// Use Cases of this in Classes:
+
+// Accessing Object Properties: The this keyword is commonly used to access
+// and modify the properties of the current object within class methods.
+
+// Event Handlers: In scenarios where class methods serve as event handlers,
+// this is used to reference the object that triggered the event.
+// It allows you to interact with the relevant object's properties and behavior.
+
+// Method Chaining: When designing fluent interfaces or APIs that support
+// method chaining, this enables sequential method calls on the same object,
+// enhancing readability and expressiveness.
+
+// Pros of this in Classes:
+
+// Object State Access: The this keyword enables easy access to the current
+// object's properties and methods, promoting encapsulation and code organization.
+
+// Method Flexibility: The dynamic nature of this allows methods to be reused
+// and called in different object contexts, offering flexibility and extensibility.
+
+// Cons of this in Classes:
+
+// Context Confusion: The behavior of this can be confusing, especially when
+// dealing with nested functions or callback functions that have their own context.
+// It requires careful understanding and handling to avoid unexpected results.
+
+// Lexical Scope Limitations: TypeScript arrow functions (() => {}) provide
+// lexical scoping, which means they don't have their own this context.
+// In such cases, this may refer to the enclosing scope, which can lead to
+// unexpected behavior if not handled correctly.
+
+// It's important to understand the usage of this in classes to effectively
+// work with object - oriented code in TypeScript.Proper usage of this ensures
+// correct access to object properties and methods, enabling clean and reusable code.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Static Members: Static members belong to the class itself, rather
 // than instances of the class. They are accessible without creating an
 // instance and are useful for defining utility methods or properties that
@@ -77,6 +168,8 @@ class MathUtils {
 // In this example, the multiply method of the MathUtils class is
 // declared as static.You can directly call it using the class name,
 // without creating an instance of the class.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Methods: Methods are functions defined within a class. They represent the behavior
 // of the objects created from the class. These methods can access and modify the
@@ -107,6 +200,8 @@ class Counter {
 // and getCount.The increment and decrement methods modify the count property,
 // while the getCount method returns its current value.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // Use cases for classes and instances:
 
 // Modeling Real-World Entities: Classes are used to represent real-world entities
@@ -125,6 +220,8 @@ class Counter {
 // Inheritance and Polymorphism: Classes support inheritance, enabling you to
 // create hierarchies of related classes.Inheritance allows subclasses to inherit
 // properties and methods from their parent class, facilitating code reuse and polymorphism.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Overall, classes and instances are fundamental concepts in object-oriented
 // programming, providing a powerful way to model, organize, and manipulate data
