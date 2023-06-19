@@ -1,6 +1,6 @@
 // Object-Oriented Programming (OOP) is a programming paradigm that organizes code around objects,
 // which encapsulate data and behavior.TypeScript, being an object - oriented language, supports
-// OOP concepts and provides additional static typing features.Let's explore OOP in TypeScript with
+// OOP concepts and provides additional static typing features. Let's explore OOP in TypeScript with
 // code examples, discuss its importance, use cases, and pros and cons.
 
 // Code Example:
@@ -33,8 +33,8 @@ dog.bark(); // Output: Buddy barked!
 
 // Explanation:
 // In the above example, we define a base class Animal with a constructor that initializes the name property.
-// The move method logs the movement distance of an animal.The Dog class extends the Animal class and adds
-// a bark method specific to dogs.The Dog class calls the super keyword within its constructor to
+// The move method logs the movement distance of an animal. The Dog class extends the Animal class and adds
+// a bark method specific to dogs. The Dog class calls the super keyword within its constructor to
 // invoke the parent class constructor.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,7 +45,7 @@ dog.bark(); // Output: Buddy barked!
 // It promotes a modular design, making code easier to understand, maintain, and extend.
 
 // Encapsulation: OOP encapsulates data and behavior within objects, hiding internal details
-// and providing a clean interface to interact with.This improves code organization, security,
+// and providing a clean interface to interact with. This improves code organization, security,
 // and reduces dependencies.
 
 // Inheritance: TypeScript supports class inheritance, allowing classes to inherit properties
@@ -61,15 +61,15 @@ dog.bark(); // Output: Buddy barked!
 // Use Cases of OOP in TypeScript:
 
 // Application Development: OOP is beneficial when developing large-scale applications where
-// code organization, modularity, and maintainability are essential.It helps in managing
+// code organization, modularity, and maintainability are essential. It helps in managing
 // complex business logic and facilitates collaboration among developers.
 
 // Framework and Library Development: OOP is commonly used in building frameworks and libraries
-// to provide reusable and extensible components.It allows users to extend and customize
+// to provide reusable and extensible components. It allows users to extend and customize
 // functionality through inheritance and polymorphism.
 
 // Game Development: OOP is well-suited for game development as it helps in modeling game entities,
-// behaviors, and interactions.It provides an efficient way to manage game objects,
+// behaviors, and interactions. It provides an efficient way to manage game objects,
 // animations, physics, and game logic.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -97,12 +97,12 @@ dog.bark(); // Output: Buddy barked!
 // indirection caused by inheritance and polymorphism.However, modern programming languages
 // and runtime optimizations mitigate these concerns in most cases.
 
-// Potential Overuse: OOP might be overused when not appropriate, leading to unnecessary c
-// omplexity and bloated code.It's important to apply OOP principles judiciously based on
+// Potential Overuse: OOP might be overused when not appropriate, leading to unnecessary
+// complexity and bloated code. It's important to apply OOP principles judiciously based on
 // the specific needs of the project.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Overall, OOP in TypeScript provides a powerful way to organize and structure code,
-// promote reusability, and improve maintainability.It's important to understand OOP
+// promote reusability, and improve maintainability. It's important to understand OOP
 // concepts and use them effectively to leverage the benefits it offers.

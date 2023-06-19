@@ -29,6 +29,7 @@ instance_public.publicMethod();
 // - Can lead to less encapsulation and potential misuse if not used carefully.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // 2. Private: Private members are only accessible from within the class where they are defined.
 //    They cannot be accessed or modified from outside the class.
 
@@ -57,6 +58,7 @@ instance_private.privateMethod(); // Error: 'privateMethod' is private and only 
 // - May require additional methods or properties to expose the private data if necessary.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // 3. Protected: Protected members are similar to private members, but they are also accessible within
 //    derived classes(subclasses).
 
@@ -90,7 +92,9 @@ instance_protected.protectedMethod(); // Error: 'protectedMethod' is protected a
 
 // Cons:
 // - Can potentially lead to a more complex class hierarchy and harder maintenance if overused.
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // 4. Default (No Access Specifier): When a class member does not have an access specifier explicitly specified,
 //    it defaults to the public access specifier.
 

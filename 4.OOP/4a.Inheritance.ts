@@ -99,11 +99,11 @@ dog.bark(); // Output: Buddy barked!
 // Care should be taken to keep the hierarchy simple and avoid deep inheritance chains.
 
 // Inflexible Structure: Inheritance creates a tight coupling between the base class
-// and its derived classes.Modifying the base class can have implications for all the
+// and its derived classes. Modifying the base class can have implications for all the
 // derived classes, which can limit flexibility and make code changes more challenging.
 
 // Inheritance vs. Composition: In some cases, composition (favoring object composition
-// over class inheritance) might be a more suitable approach.Composition allows for more
+// over class inheritance) might be a more suitable approach. Composition allows for more
 // flexibility and avoids some of the limitations and complexities associated with inheritance.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
