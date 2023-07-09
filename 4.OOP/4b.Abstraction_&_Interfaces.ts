@@ -9,7 +9,7 @@
 // Abstraction:
 // Abstraction is a concept that allows you to represent complex real-world entities or systems
 // in a simplified and generalized manner.It involves hiding unnecessary details and exposing
-// only the essential features and behavior.In TypeScript, abstraction is typically achieved 
+// only the essential features and behavior.In TypeScript, abstraction is typically achieved
 // through abstract classes.
 
 // Code Example:

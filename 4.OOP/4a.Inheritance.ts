@@ -8,30 +8,30 @@
 // Code Example:
 
 class Animal {
-  protected name: string;
+  protected Name: string;
 
-  constructor(name: string) {
-    this.name = name;
+  constructor(Name: string) {
+    this.Name = Name;
   }
 
   move(distance: number): void {
-    console.log(`${this.name} moved ${distance} meters.`);
+    console.log(`${this.Name} moved ${distance} meters.`);
   }
 }
 
-class Dog extends Animal {
-  constructor(name: string) {
-    super(name);
+class Cat extends Animal {
+  constructor(Name: string) {
+    super(Name);
   }
 
-  bark(): void {
-    console.log(`${this.name} barked!`);
+  purr(): void {
+    console.log(`${this.Name} purred!`);
   }
 }
 
-const dog = new Dog("Buddy");
-dog.move(10); // Output: Buddy moved 10 meters.
-dog.bark(); // Output: Buddy barked!
+const cat = new Cat("Buddy");
+cat.move(10); // Output: Buddy moved 10 meters.
+cat.purr(); // Output: Buddy purred!
 
 // Explanation:
 // In the above example, we have a base class Animal with a constructor that
